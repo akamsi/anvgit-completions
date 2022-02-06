@@ -18,6 +18,9 @@ _anvgit_complete()
                 build)
                     COMPREPLY=($(compgen -W "$build_cmds" -- $cur_word))
                     ;;
+                clone)
+                    COMPREPLY=($(compgen -W "checkout" -- $cur_word))
+                    ;;
             esac
             ;;
         *)
