@@ -7,7 +7,7 @@ _anvgit_complete()
     snd_word="${COMP_WORDS[1]}"
     prev_word="${COMP_WORDS[COMP_CWORD-1]}"
 
-    sub_cmds="build checkout cleanUpDockers clearDockers clone count createFnpsBranch createWorkBranch deliverContentToIntBranch exec prebase pull push pushToGerrit rebaseFeatureBranchFromInt rebuild removeRemoteFeatureBranch removeFeatureBranch removeLocalFeatureBranch syncUpdatesFromIntBranch updateWebComponentVersions"
+    sub_cmds="attest build buildStatus checkout cleanUpDockers clearDockers clone count createFnpsBranch createWorkBranch deliverContentToIntBranch exec help prebase pull push pushMod pushToGerrit quickBuild rebaseFeatureBranchFromInt rebuild removeFeatureBranch removeLocalFeatureBranch removeRemoteFeatureBranch sonar syncUpdatesFromIntBranch updateWebComponentVersions ut validate"
     build_cmds="--all-test --all-test-only --docker --docker-only --help --include-repo --include-repo --m2clean --modified-repo --modified-repo --no-rflint --no-sonar --rflint --sanity --sanity-only --time-metrics --vonu-docker-only -do -DskipTests -ns -sd rebuild"
     case ${COMP_CWORD} in
         1)
