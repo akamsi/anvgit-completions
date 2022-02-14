@@ -8,7 +8,7 @@ _anvgit_complete()
     prev_word="${COMP_WORDS[COMP_CWORD-1]}"
 
     sub_cmds="build checkout cleanUpDockers clearDockers clone count createFnpsBranch createWorkBranch deliverContentToIntBranch exec prebase pull push pushToGerrit rebaseFeatureBranchFromInt rebuild removeRemoteFeatureBranch removeFeatureBranch removeLocalFeatureBranch syncUpdatesFromIntBranch updateWebComponentVersions"
-    build_cmds="m2clean --no-sonar --docker-only --docker --sanity-only --sanity --include-repo --modified-repo --all-test --all-test-only --vonu-docker-only -DskipTests -do -ns"
+    build_cmds="--all-test --all-test-only --docker --docker-only --help --include-repo --include-repo --m2clean --modified-repo --modified-repo --no-rflint --no-sonar --rflint --sanity --sanity-only --time-metrics --vonu-docker-only -do -DskipTests -ns -sd rebuild"
     case ${COMP_CWORD} in
         1)
             COMPREPLY=($(compgen -W "$sub_cmds" -- $cur_word))
