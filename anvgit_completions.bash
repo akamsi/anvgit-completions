@@ -33,4 +33,5 @@ _anvgit_complete()
     esac
 }
 complete -F _anvgit_complete anvGit
+complete -F _anvgit_complete anvgit
 
